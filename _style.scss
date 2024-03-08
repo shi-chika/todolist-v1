@@ -1,0 +1,205 @@
+*, *::before, *::after{
+  box-sizing:border-box;
+}
+body {
+  background-color: #B6A344;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.TDlist {
+  margin: 52px auto;
+  width: 700px;
+  background-color: #D9D2A4;
+  padding: 34px;
+  position: relative;
+}
+
+.title {
+  font-size: 52px;
+  position: absolute;
+  top: -30px;
+  color: #372b24ea;
+  font-family:  'Caveat Brush', cursive;
+  font-weight: 400;
+}
+
+input,
+button,
+select {
+  outline: none;
+  border: 2px dashed transparent;
+  padding: 12px 20px;
+}
+button{
+  font-family: 'Playpen Sans', cursive;
+}
+
+i{
+  cursor: pointer;
+}
+
+
+.itemGroup {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+  margin-bottom: 30px;
+
+}
+
+.itemGroup :nth-child(1) {
+  border-radius: 14px 0 0 14px;
+  width: 40%;
+}
+
+.itemGroup :nth-child(2) {
+  cursor: pointer;
+  border-left: 2px dashed #999999;
+
+
+}
+
+.itemGroup :nth-child(3) {
+  border-radius: 0 14px 14px 0;
+  cursor: pointer;
+
+}
+
+.selectChangeR {
+  border: 2px dashed #DC143C;
+  /* background-color: #ffdab9; */
+}
+
+.selectChangeY {
+  /* background-color: #fafad2; */
+  border: 2px dashed #ffa500;
+}
+
+
+.btns :last-child{
+  margin-left: 24px;
+}
+.item:hover {
+  border: 2px dashed #999999;
+}
+
+/* .itemGroup :nth-child(3){
+  border-radius: 14px;
+  cursor: pointer;
+  padding:8px 16px;
+  margin-left:8px;
+} */
+.down-btns{
+  button{
+    border-radius: 14px;
+    cursor: pointer;
+    padding: 12px 28px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    transition: all .3s ease;
+    &:hover{
+      transform: scale(1.1);
+      
+    }
+  }
+  & :last-child{
+    margin-left: 24px;
+  }
+}
+
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+}
+
+/* 輸入表單 */
+
+.listGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 36px;
+}
+
+.listGroup li {
+  width: 80%;
+  padding: 8px 18px;
+  background-color: #ffffff;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  /* border: 2px dashed transparent; */
+  transition: all .3s;
+
+}
+
+.printText {
+  flex-grow: 1;
+  margin-left:8px;
+  
+}
+
+.listGroup span {
+  padding-left: 12px;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.listGroup li:hover {
+  background-color: #fafad2;
+  /* box-shadow: 0px 0px 2px 2px #b1b1b1; */
+
+}
+
+.delIcon {
+  cursor: pointer;
+  font-size: 20px;
+  color: transparent;
+  transition: all .2s;
+  margin-left:8px;
+}
+
+.listGroup li:hover .delIcon {
+  color: #d2691e;
+  /* color: #372b24ea; */
+}
+
+.listGroup i:hover {
+  transform: scale(1.2);
+}
+
+/* text-indent: 10px; */
+/* 匯出文字 */
+.urgent {
+  border-left: 10px solid #b7282d;
+}
+
+.important {
+  border-left: 10px solid #fabf13;
+}
+.normal{
+  border-left: 10px solid transparent;
+}
+
+.finish {
+  background-color: transparent;
+  padding: 0;
+  margin-right: 8px;
+  color: #666666;
+  font-size: 12px;
+  
+}
+
+.fa-heart {
+  font-size: 10px;
+}
+.fa-check{
+  color:darkgreen;
+}
+.fa-circle-check{
+  color:green;
+}
