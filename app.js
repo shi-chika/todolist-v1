@@ -4,7 +4,7 @@ function add() {
   let inputMemo = document.querySelector('#input_memo');
   let getInputMemo = inputMemo.value;
   if (getInputMemo === "") {
-    alert('ご入力ください。')
+    alert('ボックス内に予定を記入してください')
 
   } else {
     let listData = document.querySelector('#list');
@@ -97,7 +97,7 @@ function exportList() {
     num++
   }
   if (listLi.length === 0) {
-    alert('リストアップした項目はございません。')
+    alert('リストアップした項目がありません')
   } else {
     alert('ToDoリスト :\n' + str)
   }
