@@ -45,3 +45,11 @@ a{
 	text-decoration: none;
     color: black;
 }
+
+input,
+button,
+select {
+  -webkit-animation: none;
+  -moz-animation: none;
+  appearance: none;
+}
