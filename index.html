@@ -15,20 +15,20 @@
     <title>Mia's page</title>
   </head>
   <body>
-    <div class="wrap">
+  <div class="wrap">
     <div class="TDlist">
       <h1 class="title">To Do List</h1>
       <div class="itemGroup">
         <input id="input_memo" class="item " type="text" placeholder="入力..">
-        <select name="" id="typeSelect" class='item ' onchange='selectChange()'>
+        <select  id="typeSelect" class='item' onchange='selectChange()'>
           <option value="normal">通常</option>
           <option value="important">重要</option>
           <option value="urgent">緊急</option>
         </select>
         <button onclick="add()" class="item add" title="新增">Add</button>
-
       </div>
-      <p class="text-center">ー♥ー</p>
+
+      <p class="heart-line">ー<i class="fa-solid fa-heart"></i>ー</p>
       <div class="d-flex down-btns">
         <button id="outputBtn" class="opBtn">Text</button>
         <button onclick="save()" id="saveBtn" class="opBtn">Save</button>
