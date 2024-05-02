@@ -54,8 +54,6 @@ a {
   color: black;
 }
 
-input,
-button,
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -67,7 +65,7 @@ select {
 }
 
 body {
-  background-color: #B6A344;
+  background-color: #c6bb6e;
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -80,7 +78,8 @@ body {
 
 .TDlist {
   width: 100%;
-  background-color: #D9D2A4;
+  background-color: #d7cf99;
+  background-color: #e0d9ae;
   padding: 34px;
   position: relative;
 }
