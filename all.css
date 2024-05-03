@@ -65,7 +65,7 @@ select {
 }
 
 body {
-  background-color: #c6bb6e;
+  background-color: #d2c984;
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -79,7 +79,7 @@ body {
 .TDlist {
   width: 100%;
   background-color: #d7cf99;
-  background-color: #e0d9ae;
+  background-color: #ece7c7;
   padding: 34px;
   position: relative;
 }
@@ -111,7 +111,7 @@ select {
 
 button {
   font-family: "Playpen Sans", cursive;
-  background-color: #E2DFD0;
+  background-color: #dfdace;
   color: #333;
 }
 
@@ -163,6 +163,7 @@ option {
 @media (max-width: 767px) {
   .itemGroup :nth-child(3) {
     border-radius: 10px;
+    border: 2px dashed #999999;
   }
 }
 

@@ -2,7 +2,7 @@
   box-sizing:border-box;
 }
 body {
-  background-color: #c6bb6e;
+  background-color: #d2c984;
   font-family: "Noto Sans JP", sans-serif;
 }
 .wrap{
@@ -15,7 +15,7 @@ body {
 .TDlist {
   width: 100%;
   background-color: #d7cf99;
-  background-color: #e0d9ae;
+  background-color: #ece7c7;
   padding: 34px;
   position: relative;
   @include tablets{
@@ -46,7 +46,7 @@ select {
 
 button{
   font-family: 'Playpen Sans', cursive;
-  background-color: #E2DFD0;
+  background-color: #dfdace;
   color: #333;
 }
 
@@ -92,6 +92,7 @@ option{
   cursor: pointer;
 @include phones{
   border-radius: 10px;
+  border: 2px dashed #999999;
 }
 }
 
