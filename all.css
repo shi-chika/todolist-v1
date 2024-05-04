@@ -164,6 +164,7 @@ option {
   .itemGroup :nth-child(3) {
     border-radius: 10px;
     border: 2px dashed #999999;
+    border: 2px solid #ffffff;
   }
 }
 
