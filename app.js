@@ -4,7 +4,15 @@ function add() {
   let inputMemo = document.querySelector('#input_memo');
   let getInputMemo = inputMemo.value;
   if (getInputMemo === "") {
-    alert('ボックス内に予定を記入してください')
+    Swal.fire({
+      icon: 'warning',
+      position: 'top',
+      toast: true,
+      text: 'ボックス内に予定を記入してください',
+      confirmButtonColor: "#dd8d54",
+      width:400
+    })
+    // alert('ボックス内に予定を記入してください')
 
   } else {
     let listData = document.querySelector('#list');
@@ -88,24 +96,39 @@ function exportList() {
   let printText = li.querySelector('span').textContent;
 
     if (li.className === 'urgent') {
-      str = str + num.toString() + "." + printText + " (緊急)" + "\n";
+      str = str + num.toString() + "." + printText + " (緊急)" + "<br>";
     } else if (li.className === 'important') {
-      str = str + num.toString() + "."+ printText + "(重要)" + "\n";
+      str = str + num.toString() + "."+ printText + "(重要)" + "<br>";
     } else {
-      str = str + num.toString() + "." + printText + "\n";
+      str = str + num.toString() + "." + printText + "<br>";
     }
     num++
   }
   if (listLi.length === 0) {
-    alert('リストアップした項目がありません')
+    Swal.fire({
+      icon: 'warning',
+      position: 'top',
+      toast: true,
+      text: 'リストアップした項目がありません',
+      confirmButtonColor: "#dd8d54",
+      width:400
+    })
+   
   } else {
-    alert('ToDoリスト :\n' + str)
+    Swal.fire({
+      title: "ToDoリスト :",
+      html:`
+      <hr>
+      <div class="show-list">${str}</div>`,
+      confirmButtonColor: "#dd8d54"
+    })
+    // alert('ToDoリスト :\n' + str)
   }
 }
 
-function selectChange() {
+function selectChange(e) {
   let inputMemo = document.querySelector('#input_memo');
-  let selectedItem = event.target.options[event.target.selectedIndex].value;
+  let selectedItem = e.target.options[e.target.selectedIndex].value;
 
   if (selectedItem === 'important') {
     inputMemo.className = 'item selectChangeY';
@@ -138,7 +161,14 @@ function save (){
   })
   
   localStorage.setItem('saveData', JSON.stringify(listData));
-  alert('保存しました!!');
+  Swal.fire({
+    icon: 'success',
+    position: 'top',
+    toast: true,
+    text: '保存されました !!',
+    confirmButtonColor: "#dd8d54"
+  })
+ 
 }
 
 // 取出已存檔案
