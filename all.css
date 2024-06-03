@@ -14,10 +14,14 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -58,10 +62,6 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-
-*, *::before, *::after {
-  box-sizing: border-box;
 }
 
 body {

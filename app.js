@@ -12,7 +12,7 @@ function add() {
       confirmButtonColor: "#dd8d54",
       width:400
     })
-    // alert('ボックス内に予定を記入してください')
+   
 
   } else {
     let listData = document.querySelector('#list');
@@ -126,9 +126,9 @@ function exportList() {
   }
 }
 
-function selectChange(e) {
+function selectChange() {
   let inputMemo = document.querySelector('#input_memo');
-  let selectedItem = e.target.options[e.target.selectedIndex].value;
+  let selectedItem = event.target.options[event.target.selectedIndex].value;
 
   if (selectedItem === 'important') {
     inputMemo.className = 'item selectChangeY';
